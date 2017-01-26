@@ -15,7 +15,6 @@ exports.pageLoaded = function(args) {
   if (firstTime) {
     pokemonService.getPokemonList().then(function(data) {
       allPokemon = data;
-      // allPokemon.splice(50, 999);
       pageData.set("allPokemon", allPokemon);
     });
   }
