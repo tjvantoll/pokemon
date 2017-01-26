@@ -1,0 +1,17 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  class="page" loaded="pageLoaded">
+
+  <ActionBar class="action-bar" title="Pokémon!"></ActionBar>
+
+  <ScrollView>
+    <Repeater items="{{ allPokemon }}">
+      <Repeater.itemsLayout>
+        <FlexboxLayout class="container" />
+      </Repeater.itemsLayout>
+      <Repeater.itemTemplate>
+        <Image src="{{ sprite }}" tap="navigate" height="120" width="120" />
+      </Repeater.itemTemplate>
+    </Repeater>
+  </ScrollView>
+</Page>

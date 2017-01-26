@@ -1,0 +1,10 @@
+<Page
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  class="page" navigatingTo="onNavigatingTo">
+
+  <ActionBar class="action-bar" title="{{ name }}"></ActionBar>
+
+  <FlexboxLayout justifyContent="center">
+    <Image src="{{ sprite }}" height="120" width="120" />
+  </FlexboxLayout>
+</Page>

@@ -1,0 +1,14 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TJ VanToll <tj.vantoll@gmail.com> (http://tjvantoll.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.79.0"
+  }
+}
