@@ -5,6 +5,6 @@
   <ActionBar class="action-bar" title="{{ name }}"></ActionBar>
 
   <FlexboxLayout justifyContent="center">
-    <Image src="{{ sprite }}" height="120" width="120" />
+    <Image src="{{ sprite }}" />
   </FlexboxLayout>
 </Page>

@@ -4,3 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+Image {
+  height: 120;
+  width: 120;
+}
