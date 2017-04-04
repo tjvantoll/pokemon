@@ -4,7 +4,18 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 Image {
   height: 120;
   width: 120;
+}
+
+Label {
+  font-size: 13;
+  color: #444;
+  text-transform: capitalize;
+}
+
+.item {
+  margin-bottom: 20;
 }

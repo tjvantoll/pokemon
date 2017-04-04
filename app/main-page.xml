@@ -10,7 +10,10 @@
         <FlexboxLayout class="container" />
       </Repeater.itemsLayout>
       <Repeater.itemTemplate>
-        <Image src="{{ sprite }}" tap="navigate" />
+        <StackLayout class="item">
+          <Image src="{{ sprite }}" tap="navigate" />
+          <Label horizontalAlignment="center" textWrap="true" text="{{ name }}"/>
+        </StackLayout>
       </Repeater.itemTemplate>
     </Repeater>
   </ScrollView>

@@ -5,6 +5,16 @@
   <ActionBar class="action-bar" title="{{ name }}"></ActionBar>
 
   <FlexboxLayout justifyContent="center">
-    <Image src="{{ sprite }}" />
+    <StackLayout verticalAlignment="middle">
+      <Image src="{{ sprite }}" />
+      <Repeater items="{{ types }}">
+        <Repeater.itemsLayout>
+          <FlexboxLayout class="container" />
+        </Repeater.itemsLayout>
+        <Repeater.itemTemplate>
+          <Label textWrap="true" text="{{ $value }}"/>
+        </Repeater.itemTemplate>
+      </Repeater>
+    </StackLayout>
   </FlexboxLayout>
 </Page>

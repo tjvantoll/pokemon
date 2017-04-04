@@ -8,7 +8,6 @@ exports.getPokemonList = function() {
         .then(function(content) {
           var data = JSON.parse(content);
           data.forEach(function(pokemon) {
-            pokemon.name = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1).toLowerCase();
             pokemon.sprite = "~/img/" + pokemon.number + ".png";
           });
           resolve(data);
